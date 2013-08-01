@@ -1,21 +1,20 @@
-name: adminHunt
-version: 1.0
+name: AdminHunt
+version: ${project.version}
 description: ${project.description}
-databse: true
+database: true
 
 authors: [Tom Powell (zifnab06)]
-website: #{project.url}
+website: ${project.url}
 
-main: net.zifnab06.adminhunt
+main: net.zifnab06.AdminHunt.AdminHunt
 
-commands: 
+
+commands:
   pvp-toggle:
-    description: Toggles PVP for a given user
+    description: Toggle Player's PVP Status
     permission: adminhunt.toggle
     usage: |
-           /pvp-toggle <username> - toggles PVP for <username>
-
-
+           /<command> player - toggle player's PVP status
 permissions:
-  adminhunt.toggle
-
+  adminhunt.toggle:
+    description: Allow use of /toggle-pvp command
