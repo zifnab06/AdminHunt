@@ -44,7 +44,7 @@ public class AdminHunt extends JavaPlugin implements Listener{
 
 	}
 	public boolean onCommand(CommandSender sender, Command command, String name, String[] args) {
-		if (command.getName().equalsIgnoreCase("adminhunt") && sender instanceof Player) {
+		if (command.getName().equalsIgnoreCase("adminhunt")) {
 			if (args.length == 0) return false;
 			if (sender.hasPermission("adminhunt.toggle")){
 				if (!enabledPlayers.contains(args[0])){
