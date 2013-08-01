@@ -10,11 +10,18 @@ main: net.zifnab06.AdminHunt.AdminHunt
 
 
 commands:
-  pvp-toggle:
-    description: Toggle Player's PVP Status
+  adminhunt:
+    description: Toggle Player's AdminHunt mode
     permission: adminhunt.toggle
     usage: |
-           /<command> player - toggle player's PVP status
+           /<command> player - toggle player's AdminHunt mode
+  adminhunt-list:
+    description: List players in AdminHunt mode
+    permission: adminhunt.toggle.list
+    usage: |
+           /<command> - list all players in AdminHunt mode
 permissions:
   adminhunt.toggle:
-    description: Allow use of /toggle-pvp command
+    description: Allow use of /adminhunt command
+  adminhunt.toggle.list:
+    description: Allow use of /adminhunt command
