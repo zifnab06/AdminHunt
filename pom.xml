@@ -3,17 +3,29 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.zifnab06</groupId>
 	<artifactId>AdminHunt</artifactId>
-	<version>1.0</version>
+	<version>1.0-1.6.4</version>
 	<packaging>jar</packaging>
 	<name>AdminHunt</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+        <distributionManagement>
+                <repository>
+                        <id>zifnet-rel</id>
+                        <name>repo.zifnab.net:8000 Releases</name>
+                        <url>http://repo.zifnab.net:8000/content/repositories/releases/</url>
+                </repository>
+                <snapshotRepository>
+                        <id>zifnet-snap</id>
+                        <name>repo.zifnab.net:8000 Snapshots</name>
+                        <url>http://repo.zifnab.net:8000/content/repositories/snapshots/</url>
+                </snapshotRepository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>1.6.2-R0.1-SNAPSHOT</version>
+			<version>1.6.4-R0.1-SNAPSHOT</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
@@ -25,18 +37,6 @@
 			<type>jar</type>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
-		<repository>
-			<id>repobo-rel</id>
-			<name>repo.bukkit.org Releases</name>
-			<url>http://repo.bukkit.org/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>repobo-snap</id>
-			<name>repo.bukkit.org Snapshots</name>
-			<url>http://repo.bukkit.org/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 	<repositories>
 		<repository>

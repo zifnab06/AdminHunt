@@ -48,10 +48,10 @@ public class AdminHunt extends JavaPlugin implements Listener{
 			if (args.length == 0) return false;
 			if (sender.hasPermission("adminhunt.toggle")){
 				if (!enabledPlayers.contains(args[0])){
-					getServer().broadcastMessage(ChatColor.GREEN + "[AdminHunt] An admin hunt as begun! Find (and kill) " + args[0] + " as quickly as you can!" + ChatColor.RESET);
+					getServer().broadcastMessage(ChatColor.GREEN + "[AdminHunt] An admin hunt has begun! Find (and kill) " + args[0] + " as quickly as you can!" + ChatColor.RESET);
 					enabledPlayers.add(args[0]);
 				} else {
-					getServer().broadcastMessage(ChatColor.GREEN + "[AdminHunt] The admin hunt as ended. " + args[0] + " has been found." + ChatColor.RESET);
+					getServer().broadcastMessage(ChatColor.GREEN + "[AdminHunt] The admin hunt has ended. " + args[0] + " has been found." + ChatColor.RESET);
 					enabledPlayers.remove(args[0]);
 				}
 				return true;
